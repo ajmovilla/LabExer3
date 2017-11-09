@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.movilla.externalstorage.second_activity">
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/btn_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_display"
+        android:text="Internal Cache"
+        android:layout_marginTop="40dp"
+        android:onClick="LoadInfoInStore"/>
+    <Button
+        android:id="@+id/btn_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_a"
+        android:text="External Cache"/>
+    <Button
+        android:id="@+id/btn_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_b"
+        android:text="External Storage"
+        android:onClick="LoadInfoExStore"
+        />
+    <Button
+        android:id="@+id/btn_d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_c"
+        android:text="External Public" />
+    <Button
+        android:id="@+id/btn_f"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_d"
+        android:text="Shared Preferences"
+        android:onClick="loadPref"/>
+    <Button
+        android:id="@+id/btn_g"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_f"
+        android:text="Internal Storage"
+        android:onClick="LoadInfoInStorage"/>
+    <Button
+        android:id="@+id/btn_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_g"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Previous"
+        android:onClick="GoBack"/>
+</RelativeLayout>
